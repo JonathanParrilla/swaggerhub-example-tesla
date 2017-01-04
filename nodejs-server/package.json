@@ -1,0 +1,20 @@
+{
+  "name": "test-tesla-model-s-api",
+  "version": "0.0.1",
+  "description": "a demo API to access and control Tesla Model S",
+  "main": "index.js",
+  "scripts": {
+	"prestart": "npm install",
+	"start": "node index.js"
+  },  
+  "keywords": [
+    "swagger"
+  ],
+  "license": "Apache-2.0",
+  "private": true,
+  "dependencies": {
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "swagger-tools": "0.10.1"
+  }
+}

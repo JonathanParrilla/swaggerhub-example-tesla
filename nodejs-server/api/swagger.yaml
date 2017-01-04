@@ -1,0 +1,37 @@
+---
+swagger: "2.0"
+info:
+  description: "a demo API to access and control Tesla Model S"
+  version: "0.0.1"
+  title: "Test Tesla Model S API"
+host: "virtserver.swaggerhub.com"
+basePath: "/JonathanPa/Test-Tesla-API/0.0.1"
+schemes:
+- "https"
+paths:
+  /vehicle:
+    get:
+      description: "Details about the owned vehicle."
+      operationId: "vehicleGET"
+      parameters: []
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/inline_response_200"
+      x-swagger-router-controller: "Default"
+definitions:
+  inline_response_200:
+    properties:
+      color:
+        type: "string"
+        example: "Red"
+      vin:
+        type: "string"
+        example: "abc123"
+      display_name:
+        type: "string"
+        example: "Jonathan's Model S"
+      vehicle_id:
+        type: "string"
+        example: "zxy4567"
